@@ -175,7 +175,7 @@ function App() {
         </div>
       </div>
       <div className="m-5">
-        <h1>Migration Services</h1>
+        <h1>Our Migration Services</h1>
         <p className="fs-5">
           Infomerica excels in guiding clients through the entire migration
           acceleration program lifecycle with expertise and ​precision.
@@ -198,7 +198,7 @@ function App() {
             </p>
           </div>
           <p className="p-2 shadow rounded">
-            <b className="fs-5">Migrate & Modernise: </b>A significant portion
+            <b className="fs-5">Migrate & Modernize: </b>A significant portion
             (20-50%) of an enterprise application portfolio comprises repeated
             ​patterns that can be optimized through a factory approach. So,
             we're working with you to set up a Migration Factory ​using
