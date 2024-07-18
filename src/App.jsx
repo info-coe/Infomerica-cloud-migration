@@ -1,5 +1,5 @@
 import "./App.css";
-import Logo from "./Images/logo.png";
+import Logo from "./Images/company-logo.png";
 import AWSLogo from "./Images/AWS.png";
 import AWSCompetency from "./Images/AWS-competency.png";
 import MAPCustomerJourney from "./Images/Customer-journey-map.png";
@@ -13,40 +13,40 @@ function App() {
         <div className="text-end">
           <img
             src={Logo}
-            width="20%"
+            width="17%"
             className="bg-white m-3 p-2"
             alt="LOGO"
           ></img>
         </div>
         <div
-          className="w-50 p-3"
-          style={{ backgroundColor: "rgb(14, 46, 78)", marginLeft: "100px" }}
+          className="w-50 p-4"
+          style={{ backgroundColor: "rgb(14, 46, 78)", marginLeft: "70px" }}
         >
-          <h1 className="text-white text-center p-2">
+          <h1 className="text-white text-center">
             AWS Cloud Migration Competency Services
           </h1>
         </div>
         <div className="text-end">
           <img
             src={AWSLogo}
-            width="20%"
+            width="17%"
             className="bg-light p-4 me-5"
             alt="AWS LOGO"
           ></img>
         </div>
         <div>
           <h4 className="text-white ms-5">
-            Infomerica: Demystifying the AWS Migration Competency for
+            Infomerica Demystifying the AWS Migration Competency for
             Prospective Partners
           </h4>
         </div>
         <div className="mt-3">
           <a
-            className="bg-white ms-5 p-2 fs-5 ps-5 pe-5"
+            className="bg-white rounded ms-5 p-2 text-decoration-none text-dark"
             href="https://infomericainc.com/AWS-Services"
             target="blank"
           >
-            Our Services
+            <b>Our Services <i className="bi bi-arrow-right"></i></b>
           </a>
         </div>
       </div>
