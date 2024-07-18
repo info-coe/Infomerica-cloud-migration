@@ -9,16 +9,3 @@
   background-position: center;
   height: 110vh;
 }
-
-.footerBanner{
-  background: url("./Images/footer.jpg");
-  height: 480px;
-  background-repeat: no-repeat;
-  background-position: center;
-  background-size: cover;
-}
-
-.footerHr{
-  position: relative;
-  left: 90px;
-}
