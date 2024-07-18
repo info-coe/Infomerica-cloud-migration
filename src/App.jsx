@@ -20,7 +20,7 @@ function App() {
         </div>
         <div
           className="w-50 p-4"
-          style={{ backgroundColor: "rgb(14, 46, 78)", marginLeft: "70px" }}
+          style={{ backgroundColor: "rgb(14, 46, 78)", marginLeft: "110px" }}
         >
           <h1 className="text-white text-center">
             AWS Cloud Migration Competency Services
@@ -29,18 +29,18 @@ function App() {
         <div className="text-end">
           <img
             src={AWSLogo}
-            width="17%"
+            width="19%"
             className="bg-light p-4 me-5"
             alt="AWS LOGO"
           ></img>
         </div>
         <div>
-          <h4 className="text-white ms-5">
+          <h4 className="text-white" style={{marginLeft:"110px"}}>
             Infomerica Demystifying the AWS Migration Competency for
             Prospective Partners
           </h4>
         </div>
-        <div className="mt-3">
+        <div className="mt-3 text-end w-75">
           <a
             className="bg-white rounded ms-5 p-2 text-decoration-none text-dark"
             href="https://infomericainc.com/AWS-Services"
