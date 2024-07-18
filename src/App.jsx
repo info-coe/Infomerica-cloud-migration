@@ -190,7 +190,7 @@ function App() {
               plan to address identified gaps.
             </p>
             <p className="p-2 shadow rounded">
-              <b className="fs-5">Mobilise: </b>Infomerica builds AWS
+              <b className="fs-5">Mobilize: </b>Infomerica builds AWS
               proficiency within client organizations by facilitating hands-on
               migration ​experiences. This phase focuses on establishing a
               scalable and secure AWS landing zone while migrating select
