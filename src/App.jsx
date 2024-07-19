@@ -3,8 +3,12 @@ import Logo from "./Images/company-logo.png";
 import AWSLogo from "./Images/AWS.png";
 import AWSCompetency from "./Images/AWS-competency.png";
 import MAPCustomerJourney from "./Images/Customer-journey-map.png";
-import AWSMigrationServices from "./Images/AWS-migration-services.png";
-import AWSMigrationModernization from "./Images/AWS-migration-modernization.png";
+// import AWSMigrationServices from "./Images/AWS-migration-services.png";
+// import AWSMigrationModernization from "./Images/AWS-migration-modernization.png";
+import capability1 from "./Images/capability1.webp";
+import capability2 from "./Images/capability2.png";
+import capability3 from "./Images/capability3.png";
+import capability4 from "./Images/capability4.png";
 
 function App() {
   return (
@@ -26,34 +30,40 @@ function App() {
             AWS Cloud Migration Competency Services
           </h1>
         </div>
-        <div className="text-end">
-          <img
-            src={AWSLogo}
-            width="19%"
-            className="bg-light p-4 me-5"
-            alt="AWS LOGO"
-          ></img>
-        </div>
-        <div>
-          <h4 className="text-white" style={{marginLeft:"110px"}}>
-            Infomerica Demystifying the AWS Migration Competency for
-            Prospective Partners
-          </h4>
-        </div>
-        <div className="mt-3 text-end w-75">
-          <a
-            className="bg-white rounded ms-5 p-2 text-decoration-none text-dark"
-            href="https://infomericainc.com/AWS-Services"
-            target="blank"
-          >
-            <b>Our Services <i className="bi bi-arrow-right"></i></b>
-          </a>
+        <div className="d-flex" style={{ marginTop: "140px" }}>
+          <div className="mt-5">
+            <div className="">
+              <h4 className="text-white" style={{ marginLeft: "60px" }}>
+                Infomerica Demystifying the AWS Migration Competency for
+                Prospective Partners
+              </h4>
+            </div>
+            <div className="mt-3 text-end">
+              <a
+                className="bg-white rounded ms-5 p-2 text-decoration-none text-dark"
+                href="https://infomericainc.com/AWS-Services"
+                target="blank"
+              >
+                <b>
+                  Our Services <i className="bi bi-arrow-right"></i>
+                </b>
+              </a>
+            </div>
+          </div>
+          <div className="text-end">
+            <img
+              src={AWSLogo}
+              width="36%"
+              className="bg-light p-4 me-3"
+              alt="AWS LOGO"
+            ></img>
+          </div>
         </div>
       </div>
       <div className="mt-4">
-        <h1 className="text-center">AWS Competency – Our Approach</h1>
+        <h1 className="text-center">Our Approach</h1>
         <div>
-          <div className="d-md-flex justify-content-center align-items-center gap-5 m-4">
+          <div className="d-md-flex justify-content-center align-items-center gap-5 m-2">
             <img
               src={AWSCompetency}
               className=""
@@ -69,7 +79,7 @@ function App() {
               optimization.
             </p>
           </div>
-          <div className="d-md-flex gap-3 m-4 fs-6">
+          {/* <div className="d-md-flex gap-3 m-4 fs-6">
             <p className=" p-3 shadow rounded">
               As an AWS Select Consulting Partner, Infomerica offers
               unparalleled services and support to help clients navigate the
@@ -90,7 +100,7 @@ function App() {
               services help you overcome challenges and seize opportunities in
               the evolving digital landscape.
             </p>
-          </div>
+          </div> */}
         </div>
       </div>
       <div className="m-5">
@@ -174,43 +184,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="m-5">
-        <h1>Our Migration Services</h1>
-        <p className="fs-5">
-          Infomerica excels in guiding clients through the entire migration
-          acceleration program lifecycle with expertise and ​precision.
-        </p>
-        <div className="fs-6">
-          <div className="d-md-flex gap-3">
-            <p className="p-2 shadow rounded">
-              <b className="fs-5">Assess: </b>Infomerica initiates the migration
-              journey with a thorough Migration Readiness Assessment (MRA)
-              aligned ​with the AWS Cloud Adoption Framework. This assessment
-              evaluates the enterprise's cloud readiness and ​provides an action
-              plan to address identified gaps.
-            </p>
-            <p className="p-2 shadow rounded">
-              <b className="fs-5">Mobilize: </b>Infomerica builds AWS
-              proficiency within client organizations by facilitating hands-on
-              migration ​experiences. This phase focuses on establishing a
-              scalable and secure AWS landing zone while migrating select
-              ​business applications to the cloud.
-            </p>
-          </div>
-          <p className="p-2 shadow rounded">
-            <b className="fs-5">Migrate & Modernize: </b>A significant portion
-            (20-50%) of an enterprise application portfolio comprises repeated
-            ​patterns that can be optimized through a factory approach. So,
-            we're working with you to set up a Migration Factory ​using
-            patterns, processes, tools, resources, and methodologies defined and
-            tested during the mobilization phase to ​migrate applications at
-            scale. Larger and more complex applications often follow the
-            refactor/rearchitect pattern, ​and Infomerica's Architects, Cloud
-            Specialists, and SecOps Specialists work diligently to ensure your
-            success in ​migrating to AWS.
-          </p>
-        </div>
-      </div>
+
       <div className="text-center">
         <img
           src={MAPCustomerJourney}
@@ -220,20 +194,145 @@ function App() {
         />
       </div>
       <div className="m-5">
-        <div className="d-md-flex gap-5 justify-content-center align-items-center">
-          <img
+        <div className="">
+          {/* <img
             src={AWSMigrationServices}
             alt="AWS Migration Services"
             width="20%"
-          ></img>
-          <h1 className="d-md-flex justify-content-center align-items-center">
-            Infomerica Provides the Migration Services
-          </h1>
+          ></img> */}
+          <h1 className="text-center">Our Capabilities</h1>
         </div>
 
-        <div className="mt-5 d-md-flex gap-3">
-          <div>
-            <div className="m-2 p-2 shadow">
+        <div className="mt-5 d-md-flex gap-5 flex-wrap justify-content-center align-items-center">
+          <div className="mt-3 mb-3 shadow-lg customCard">
+            <div className="card" style={{ width: "30rem", height: "33rem" }}>
+              <img
+                src={capability1}
+                className="card-img-top"
+                alt="logo"
+                height="220px"
+                style={{ objectFit: "contain" }}
+              />
+              <div className="card-body">
+                <h5 className="card-title text-center">
+                  Migration Strategy Development
+                </h5>
+                <p className="card-text mt-4">
+                  {" "}
+                  Infomerica provides tailored cloud migration solutions
+                  designed to support your digital transformation journey. We
+                  collaborate with you to develop customized migration
+                  strategies that align with your business objectives. Whether
+                  you opt for public, private, or hybrid cloud solutions, our
+                  approach involves using pre-set templates and data analytics
+                  to ensure a smooth, effective migration with minimal business
+                  disruption.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="mt-3 mb-3 shadow-lg customCard">
+            <div className="card" style={{ width: "30rem", height: "33rem" }}>
+              <img
+                src={capability2}
+                className="card-img-top"
+                alt="logo"
+                height="220px"
+                style={{ objectFit: "contain" }}
+              />
+              <div className="card-body">
+                <h5 className="card-title text-center">
+                Five-Step Migration Plan
+                </h5>
+                <p className="card-text mt-4">
+                  {" "}
+                  Our comprehensive five-step migration plan includes several
+                  critical phases. We start with a well-planned strategy to
+                  assess your organization’s readiness for cloud services. This
+                  is followed by an infrastructure audit to evaluate your
+                  existing setup against best practices for security,
+                  scalability, and disaster recovery. Next, we design a
+                  supportive cloud architecture and leverage advanced automation
+                  technologies to streamline the migration process. Finally, we
+                  deploy and test the new cloud environment to ensure it meets
+                  performance, functionality, and scalability requirements.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="mt-3 mb-3 shadow-lg customCard">
+            <div className="card" style={{ width: "30rem", height: "33rem" }}>
+              <img
+                src={capability3}
+                className="card-img-top"
+                alt="logo"
+                height="220px"
+                style={{ objectFit: "contain" }}
+              />
+              <div className="card-body">
+                <h5 className="card-title text-center">
+                  Decade of Expertise and Support
+                </h5>
+                <p className="card-text mt-4">
+                  {" "}
+                  With over a decade of experience in cloud migration
+                  consulting, Infomerica offers extensive expertise and support.
+                  We help develop a detailed migration roadmap, re-architect and
+                  re-platform databases and applications, and provide continuous
+                  support throughout the migration process. Our goal is to
+                  minimize errors and address infrastructure needs to ensure a
+                  seamless transition.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="mt-3 mb-3 shadow-lg customCard">
+            <div className="card" style={{ width: "30rem", height: "33rem" }}>
+              <img
+                src={capability4}
+                className="card-img-top"
+                alt="logo"
+                height="220px"
+                style={{ objectFit: "contain" }}
+              />
+              <div className="card-body">
+                <h5 className="card-title text-center">
+                  Detailed Ten-Step Migration Process
+                </h5>
+                <p className="card-text mt-4">
+                  {" "}
+                  Our detailed ten-step cloud migration process includes
+                  defining a strategy and objectives based on your business
+                  goals, assessing your current infrastructure, and planning the
+                  migration with a focus on workload prioritization, timelines,
+                  and resources. We prepare your IT and development teams with
+                  the necessary knowledge and tools, execute the migration in
+                  phases, and provide ongoing security and management to
+                  maintain optimal performance and compliance.
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* <div class="flip-card" tabIndex="0">
+              <div class="flip-card-inner">
+                <div class="flip-card-front">
+                  <h3>Migration Strategy Development</h3>
+                </div>
+                <div class="flip-card-back">
+                  <p>
+                    Infomerica provides tailored cloud migration solutions
+                    designed to support your digital transformation journey. We
+                    collaborate with you to develop customized migration
+                    strategies that align with your business objectives. Whether
+                    you opt for public, private, or hybrid cloud solutions, our
+                    approach involves using pre-set templates and data analytics
+                    to ensure a smooth, effective migration with minimal
+                    business disruption.
+                  </p>
+                </div>
+              </div>
+            </div> */}
+          {/* <div className="m-2 p-2 shadow">
               <h5>Migration Strategy Development</h5>
               <p>
                 Infomerica collaborates with clients to develop comprehensive
@@ -269,9 +368,8 @@ function App() {
                 optimization opportunities, and implements adjustments to
                 optimize AWS spending while maintaining optimal performance.
               </p>
-            </div>
-          </div>
-          <div>
+            </div> */}
+          {/* <div>
             <div className="bg-light m-2 p-2">
               <h5>Workload Discovery and Assessment</h5>
               <p>
@@ -309,25 +407,27 @@ function App() {
                 migration process.
               </p>
             </div>
-          </div>
+          </div> */}
         </div>
       </div>
-      <div>
-        <div className="d-md-flex">
+      {/* <div>
+        <div className="migrationmodernization">
           <div className="text-center">
             <img
               src={AWSMigrationModernization}
               alt="AWS Migration and Modernization"
               width="60%"
             ></img>
-          </div>
-          <h1 className="d-md-flex justify-content-center align-items-center">
-            Infomerica Empowering Seamless AWS Migration and Modernization
+          </div> 
+          <h1 className="text-center" >
+            Simplifying AWS Migration & Modernization
           </h1>
         </div>
         <div className="m-5 d-md-flex gap-3">
           <div className="p-2 shadow rounded">
-            <h5 className="text-center">Discovery, Planning, and Recommendation</h5>
+            <h5 className="text-center">
+              Discovery, Planning, and Recommendation
+            </h5>
             <p>
               Infomerica assists in assessing your existing environment,
               identifying workloads suitable for migration, and recommending the
@@ -369,7 +469,7 @@ function App() {
             </p>
           </div>
         </div>
-      </div>
+      </div> */}
       <div className="contactusdiv bg-light mt-3 mb-3">
         <h1 className="text-center">Contact Us</h1>
         <p className="text-center mt-3">
