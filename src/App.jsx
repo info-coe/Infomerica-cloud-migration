@@ -24,36 +24,28 @@ function App() {
         </div>
         <div
           className="w-50 p-4"
-          style={{ backgroundColor: "rgb(14, 46, 78)", marginLeft: "110px" }}
+          style={{
+            backgroundColor: "rgba(14, 46, 78,0.7)",
+            marginLeft: "110px",
+          }}
         >
           <h1 className="text-white text-center">
-            AWS Cloud Migration Competency Services
+            Streamline Your Operations with Infomerica's AWS Services
           </h1>
         </div>
-        <div className="d-flex" style={{ marginTop: "140px" }}>
+        <div className="d-md-flex" style={{ marginTop: "140px" }}>
           <div className="mt-5">
             <div className="">
               <h4 className="text-white" style={{ marginLeft: "60px" }}>
-                Infomerica Demystifying the AWS Migration Competency for
-                Prospective Partners
+                Achieve Greater Efficiency and Security with Our Customized
+                Solutions
               </h4>
-            </div>
-            <div className="mt-3 text-end">
-              <a
-                className="bg-white rounded ms-5 p-2 text-decoration-none text-dark"
-                href="https://infomericainc.com/AWS-Services"
-                target="blank"
-              >
-                <b>
-                  Our Services <i className="bi bi-arrow-right"></i>
-                </b>
-              </a>
             </div>
           </div>
           <div className="text-end">
             <img
               src={AWSLogo}
-              width="36%"
+              width="30%"
               className="bg-light p-4 me-3"
               alt="AWS LOGO"
             ></img>
@@ -63,7 +55,7 @@ function App() {
       <div className="mt-4">
         <h1 className="text-center">Our Approach</h1>
         <div>
-          <div className="d-md-flex justify-content-center align-items-center gap-5 m-2">
+          <div className="d-md-flex justify-content-center align-items-center gap-5 m-2 mb-0">
             <img
               src={AWSCompetency}
               className=""
@@ -77,8 +69,21 @@ function App() {
               Infomerica excels in guiding customers through every phase of
               their migration journey, from initial planning to post-migration
               optimization.
+              <br />
+              <span className="d-flex justify-content-end me-4 fs-6 mt-3">
+                <a
+                  className="bg-dark rounded ms-5 p-2 text-decoration-none text-white"
+                  href="https://infomericainc.com/AWS-Services"
+                  target="blank"
+                >
+                  <b>
+                    Get More <i className="bi bi-arrow-right"></i>
+                  </b>
+                </a>
+              </span>
             </p>
           </div>
+
           {/* <div className="d-md-flex gap-3 m-4 fs-6">
             <p className=" p-3 shadow rounded">
               As an AWS Select Consulting Partner, Infomerica offers
@@ -121,12 +126,10 @@ function App() {
               Seamless Migration Strategies
             </h5>
             <p className="p-3">
-              At Infomerica, we specialize in crafting seamless migration
-              strategies tailored to your unique business needs. Leveraging our
-              deep understanding of AWS services, we ensure a smooth transition
-              of your applications, data, and infrastructure to the cloud
-              environment. Our meticulously designed migration plans prioritize
-              minimal disruption to your operations, allowing for a seamless
+              At Infomerica, we craft tailored migration strategies for your
+              unique business needs, ensuring a smooth transition of
+              applications, data, and infrastructure to AWS. Our meticulous
+              plans prioritize minimal disruption, guaranteeing a seamless
               migration experience.
             </p>
           </div>
@@ -138,13 +141,11 @@ function App() {
               Minimal Downtime Assurance
             </h5>
             <p className="p-3">
-              Minimizing downtime is paramount during the migration process to
-              mitigate any potential impact on your business operations. With
-              our proven methodologies and robust migration frameworks, we
-              guarantee minimal downtime throughout the migration journey. Our
-              expert team meticulously plans and executes each migration phase
-              to ensure uninterrupted service availability, thereby safeguarding
-              your business continuity.
+              Minimizing downtime is crucial during migration. With our proven
+              methodologies and robust frameworks, we ensure minimal downtime
+              throughout the process. Our expert team meticulously plans each
+              phase to maintain uninterrupted service, safeguarding business
+              continuity.
             </p>
           </div>
           <div className="shadow ">
@@ -155,13 +156,10 @@ function App() {
               Comprehensive Risk Mitigation Strategies
             </h5>
             <p className="p-3">
-              Infomerica. employs comprehensive risk mitigation strategies to
-              address potential challenges and mitigate associated risks during
-              the migration process. Our team conducts thorough risk
-              assessments, identifying and addressing potential issues before
-              they escalate. By implementing proactive measures and contingency
-              plans, we ensure a secure and risk-free migration experience,
-              safeguarding your data integrity and operational resilience.
+              Infomerica employs comprehensive risk mitigation strategies to
+              address potential challenges during migration. We conduct thorough
+              risk assessments and implement proactive measures and contingency
+              plans, ensuring a secure, risk-free migration experience.
             </p>
           </div>
           <div className="shadow ">
@@ -172,27 +170,25 @@ function App() {
               Post-Migration Support Excellence
             </h5>
             <p className="p-3">
-              Our commitment to excellence extends beyond the migration phase,
-              as we provide comprehensive post-migration support to ensure a
-              seamless transition to the cloud environment. Our dedicated
-              support team remains available round-the-clock to address any
-              post-migration issues or concerns promptly. Additionally, we offer
-              ongoing monitoring, optimization, and maintenance services to
-              maximize the performance and efficiency of your cloud
-              infrastructure, ensuring long-term success and value realization.
+              Our commitment extends beyond migration with comprehensive
+              post-migration support. Our dedicated team is available
+              round-the-clock to address any issues promptly. We offer ongoing
+              monitoring, optimization, and maintenance to maximize your cloud
+              infrastructure’s performance and efficiency, ensuring long-term
+              success.
             </p>
           </div>
         </div>
       </div>
 
-      <div className="text-center">
+      {/* <div className="text-center">
         <img
           src={MAPCustomerJourney}
           alt="MAP Customer Journey"
           width="60%"
           className="m-2"
         />
-      </div>
+      </div> */}
       <div className="m-5">
         <div className="">
           {/* <img
@@ -203,9 +199,78 @@ function App() {
           <h1 className="text-center">Our Capabilities</h1>
         </div>
 
-        <div className="mt-5 d-md-flex gap-5 flex-wrap justify-content-center align-items-center">
-          <div className="mt-3 mb-3 shadow-lg customCard">
-            <div className="card" style={{ width: "30rem", height: "33rem" }}>
+        <div className="mt-5 d-md-flex gap-3 flex-wrap">
+          <div className="flip-card" tabIndex="0">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <h3>Migration Strategy Development</h3>
+              </div>
+              <div className="flip-card-back">
+                <p className="p-4">
+                  {" "}
+                  We offers customized cloud migration solutions to support your
+                  digital transformation. We work with you to develop strategies
+                  that align with your business goals, using pre-set templates
+                  and data analytics to ensure a smooth migration with minimal
+                  disruption.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="flip-card" tabIndex="0">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <h3>Five-Step Migration Plan</h3>
+              </div>
+              <div className="flip-card-back">
+                <p className="p-4">
+                  {" "}
+                  Our comprehensive five-step migration plan includes several
+                  critical phases. We start with a well-planned strategy to
+                  assess your organization’s readiness for cloud services. This
+                  is followed by an infrastructure audit to evaluate your
+                  existing setup against best practices for security,
+                  scalability, and disaster recovery.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="flip-card" tabIndex="0">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <h3>Decade of Expertise and Support</h3>
+              </div>
+              <div className="flip-card-back">
+                <p className="p-4">
+                  {" "}
+                  With over a decade of experience in cloud migration
+                  consulting, Infomerica offers extensive expertise and support.
+                  We help develop a detailed migration roadmap, re-architect and
+                  re-platform databases and applications, and provide continuous
+                  support throughout the migration process.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div className="flip-card" tabIndex="0">
+            <div className="flip-card-inner">
+              <div className="flip-card-front">
+                <h3>Detailed Ten-Step Migration Process</h3>
+              </div>
+              <div className="flip-card-back">
+                <p className="p-4">
+                  {" "}
+                  Our detailed ten-step cloud migration process includes
+                  defining a strategy and objectives based on your business
+                  goals, assessing your current infrastructure, and planning the
+                  migration with a focus on workload prioritization, timelines,
+                  and resources.
+                </p>
+              </div>
+            </div>
+          </div>
+          {/* <div className="mt-3 mb-3 shadow-lg customCard">
+            <div className="card">
               <img
                 src={capability1}
                 className="card-img-top"
@@ -219,20 +284,17 @@ function App() {
                 </h5>
                 <p className="card-text mt-4">
                   {" "}
-                  Infomerica provides tailored cloud migration solutions
-                  designed to support your digital transformation journey. We
-                  collaborate with you to develop customized migration
-                  strategies that align with your business objectives. Whether
-                  you opt for public, private, or hybrid cloud solutions, our
-                  approach involves using pre-set templates and data analytics
-                  to ensure a smooth, effective migration with minimal business
+                  We offers customized cloud migration solutions to support your
+                  digital transformation. We work with you to develop strategies
+                  that align with your business goals, using pre-set templates
+                  and data analytics to ensure a smooth migration with minimal
                   disruption.
                 </p>
               </div>
             </div>
-          </div>
-          <div className="mt-3 mb-3 shadow-lg customCard">
-            <div className="card" style={{ width: "30rem", height: "33rem" }}>
+          </div> */}
+          {/* <div className="mt-3 mb-3 shadow-lg customCard">
+            <div className="card">
               <img
                 src={capability2}
                 className="card-img-top"
@@ -242,7 +304,7 @@ function App() {
               />
               <div className="card-body">
                 <h5 className="card-title text-center">
-                Five-Step Migration Plan
+                  Five-Step Migration Plan
                 </h5>
                 <p className="card-text mt-4">
                   {" "}
@@ -251,17 +313,13 @@ function App() {
                   assess your organization’s readiness for cloud services. This
                   is followed by an infrastructure audit to evaluate your
                   existing setup against best practices for security,
-                  scalability, and disaster recovery. Next, we design a
-                  supportive cloud architecture and leverage advanced automation
-                  technologies to streamline the migration process. Finally, we
-                  deploy and test the new cloud environment to ensure it meets
-                  performance, functionality, and scalability requirements.
+                  scalability, and disaster recovery.
                 </p>
               </div>
             </div>
-          </div>
-          <div className="mt-3 mb-3 shadow-lg customCard">
-            <div className="card" style={{ width: "30rem", height: "33rem" }}>
+          </div> */}
+          {/* <div className="mt-3 mb-3 shadow-lg customCard">
+            <div className="card">
               <img
                 src={capability3}
                 className="card-img-top"
@@ -279,15 +337,13 @@ function App() {
                   consulting, Infomerica offers extensive expertise and support.
                   We help develop a detailed migration roadmap, re-architect and
                   re-platform databases and applications, and provide continuous
-                  support throughout the migration process. Our goal is to
-                  minimize errors and address infrastructure needs to ensure a
-                  seamless transition.
+                  support throughout the migration process.
                 </p>
               </div>
             </div>
-          </div>
-          <div className="mt-3 mb-3 shadow-lg customCard">
-            <div className="card" style={{ width: "30rem", height: "33rem" }}>
+          </div> */}
+          {/* <div className="mt-3 mb-3 shadow-lg customCard">
+            <div className="card">
               <img
                 src={capability4}
                 className="card-img-top"
@@ -305,14 +361,11 @@ function App() {
                   defining a strategy and objectives based on your business
                   goals, assessing your current infrastructure, and planning the
                   migration with a focus on workload prioritization, timelines,
-                  and resources. We prepare your IT and development teams with
-                  the necessary knowledge and tools, execute the migration in
-                  phases, and provide ongoing security and management to
-                  maintain optimal performance and compliance.
+                  and resources.
                 </p>
               </div>
             </div>
-          </div>
+          </div> */}
           {/* <div class="flip-card" tabIndex="0">
               <div class="flip-card-inner">
                 <div class="flip-card-front">
@@ -503,7 +556,10 @@ function App() {
               href="mailto:info@infomericainc.com"
               className="text-decoration-none text-white"
             >
-              <button className="btn btn-danger fs-5 w-100">
+              <button
+                className="btn fs-5 w-100 text-white"
+                style={{ backgroundColor: "rgb(14, 46, 78)" }}
+              >
                 Send Message
               </button>
             </a>
