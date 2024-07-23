@@ -121,7 +121,7 @@ function App() {
           <div className="shadow ">
             <h5
               className="text-white p-3 portfoliohead"
-              style={{ backgroundColor: "rgb(14, 46, 78)" , height:"auto" }}
+              style={{ backgroundColor: "rgb(14, 46, 78)", height: "auto" }}
             >
               Seamless Migration Strategies
             </h5>
@@ -136,7 +136,7 @@ function App() {
           <div className="shadow ">
             <h5
               className="text-white p-3 portfoliohead"
-              style={{ backgroundColor: "rgb(14, 46, 78)" , height:"auto" }}
+              style={{ backgroundColor: "rgb(14, 46, 78)", height: "auto" }}
             >
               Minimal Downtime Assurance
             </h5>
@@ -151,7 +151,7 @@ function App() {
           <div className="shadow ">
             <h5
               className="text-white p-3 portfoliohead"
-              style={{ backgroundColor: "rgb(14, 46, 78)", height:"auto"}}
+              style={{ backgroundColor: "rgb(14, 46, 78)", height: "auto" }}
             >
               Comprehensive Risk Mitigation Strategies
             </h5>
@@ -165,7 +165,7 @@ function App() {
           <div className="shadow ">
             <h5
               className="text-white p-3 portfoliohead"
-              style={{ backgroundColor: "rgb(14, 46, 78)", height:"auto" }}
+              style={{ backgroundColor: "rgb(14, 46, 78)", height: "auto" }}
             >
               Post-Migration Support Excellence
             </h5>
@@ -220,17 +220,16 @@ function App() {
           <div className="flip-card" tabIndex="0">
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                <h3>Five-Step Migration Plan</h3>
+                <h3>Strategy Planning and Infrastructure Audit</h3>
               </div>
               <div className="flip-card-back">
                 <p className="p-4">
                   {" "}
-                  Our comprehensive five-step migration plan includes several
-                  critical phases. We start with a well-planned strategy to
-                  assess your organization’s readiness for cloud services. This
-                  is followed by an infrastructure audit to evaluate your
-                  existing setup against best practices for security,
-                  scalability, and disaster recovery.
+                  Our capabilities include strategy planning to assess your
+                  organization’s readiness for cloud services and an
+                  infrastructure audit to evaluate your existing setup against
+                  best practices for security, scalability, and disaster
+                  recovery.
                 </p>
               </div>
             </div>
@@ -255,16 +254,16 @@ function App() {
           <div className="flip-card" tabIndex="0">
             <div className="flip-card-inner">
               <div className="flip-card-front">
-                <h3>Detailed Ten-Step Migration Process</h3>
+                <h3>Ongoing Optimization and Maintenance</h3>
               </div>
               <div className="flip-card-back">
                 <p className="p-4">
                   {" "}
-                  Our detailed ten-step cloud migration process includes
-                  defining a strategy and objectives based on your business
-                  goals, assessing your current infrastructure, and planning the
-                  migration with a focus on workload prioritization, timelines,
-                  and resources.
+                  Infomerica’s commitment doesn’t end with migration. We offer
+                  ongoing optimization and maintenance services to ensure your
+                  cloud environment remains efficient and effective. Our
+                  continuous monitoring and proactive improvements help you
+                  maximize the benefits of your cloud investment.
                 </p>
               </div>
             </div>
