@@ -70,9 +70,9 @@ function App() {
               their migration journey, from initial planning to post-migration
               optimization.
               <br />
-              <span className="d-flex justify-content-end me-4 fs-6 mt-3">
+              <span className="d-flex justify-content-start me-4 fs-6 mt-3">
                 <a
-                  className="bg-dark rounded ms-5 p-2 text-decoration-none text-white"
+                  className="bg-dark rounded p-2 text-decoration-none text-white"
                   href="https://infomericainc.com/AWS-Services"
                   target="blank"
                 >
