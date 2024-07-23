@@ -117,11 +117,11 @@ function App() {
           meticulously crafted to meet the unique demands of the cloud
           landscape.
         </p>
-        <div className="d-md-flex gap-4 mt-4">
+        <div className="ourserviceportfolio-grid mt-4">
           <div className="shadow ">
             <h5
-              className="text-white p-3"
-              style={{ backgroundColor: "rgb(14, 46, 78)" }}
+              className="text-white p-3 portfoliohead"
+              style={{ backgroundColor: "rgb(14, 46, 78)" , height:"auto" }}
             >
               Seamless Migration Strategies
             </h5>
@@ -135,8 +135,8 @@ function App() {
           </div>
           <div className="shadow ">
             <h5
-              className="text-white p-3"
-              style={{ backgroundColor: "rgb(14, 46, 78)" }}
+              className="text-white p-3 portfoliohead"
+              style={{ backgroundColor: "rgb(14, 46, 78)" , height:"auto" }}
             >
               Minimal Downtime Assurance
             </h5>
@@ -150,8 +150,8 @@ function App() {
           </div>
           <div className="shadow ">
             <h5
-              className="text-white p-3"
-              style={{ backgroundColor: "rgb(14, 46, 78)" }}
+              className="text-white p-3 portfoliohead"
+              style={{ backgroundColor: "rgb(14, 46, 78)", height:"auto"}}
             >
               Comprehensive Risk Mitigation Strategies
             </h5>
@@ -164,8 +164,8 @@ function App() {
           </div>
           <div className="shadow ">
             <h5
-              className="text-white p-3"
-              style={{ backgroundColor: "rgb(14, 46, 78)" }}
+              className="text-white p-3 portfoliohead"
+              style={{ backgroundColor: "rgb(14, 46, 78)", height:"auto" }}
             >
               Post-Migration Support Excellence
             </h5>
@@ -199,7 +199,7 @@ function App() {
           <h1 className="text-center">Our Capabilities</h1>
         </div>
 
-        <div className="mt-5 d-md-flex gap-3 flex-wrap">
+        <div className="mt-5 ourcapabilities-grid">
           <div className="flip-card" tabIndex="0">
             <div className="flip-card-inner">
               <div className="flip-card-front">
