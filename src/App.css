@@ -110,6 +110,9 @@ h3 {
   .ourcapabilities-grid , .ourserviceportfolio-grid{
     grid-template-columns: repeat(2, 1fr);
   }
+  .contactdiv{
+    height: 460px;
+  }
  
 }
 
@@ -123,10 +126,16 @@ h3 {
   .portfoliohead{
     min-height: 100px;
   }
+   .contactdiv{
+    height: 460px;
+  }
 }
 
 @media (min-width: 1200px) {
   .ourcapabilities-grid, .ourserviceportfolio-grid {
     grid-template-columns: repeat(4, 1fr);
+  }
+  .contactdiv{
+    height: 470px;
   }
 }

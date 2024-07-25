@@ -246,37 +246,47 @@ function App() {
         <p className="text-center mt-3">
           Please take a moment to get in touch, we will get back to you shortly.
         </p>
-        <div className="d-md-flex">
-          <div className="col-md-6">
-            <img src={contactImage} alt="contact" width="100%" height="100%"></img>
+        <div className="d-lg-flex">
+          <div className="col-lg-6 contactdiv">
+            <img src={contactImage} alt="contact" width="100%" height="100%" style={{backgroundSize:"cover", backgroundPosition:"center" }}></img>
           </div>
-          <div className="d-flex flex-column gap-3 col-md-6 p-2 p-lg-5 bg-light">
+          <div className="d-flex flex-column gap-2 col-lg-6 p-2 ps-md-5 pe-md-5 pt-md-4 pb-md-4 bg-light contactdiv">
+            <div>
             <label>
               <b>Your Name</b>
             </label>
             <input type="text" className="form-control" />
-            <label>
+            </div>
+           <div>
+           <label>
               <b>Email Address</b>
             </label>
             <input type="email" className="form-control" />
-            <label>
+           </div>
+           <div>
+           <label>
               <b>Phone Number</b>
             </label>
             <input type="tel" className="form-control" />
-            <label>
+           </div>
+           <div>
+           <label>
               <b>Orgaization</b>
             </label>
             <input type="text" className="form-control" />
-            <label>
+           </div>
+           <div>
+           <label>
               <b>Message</b>
             </label>
-            <textarea rows="3" cols="50" className="form-control"></textarea>
+            <textarea rows="2" cols="50" className="form-control"></textarea>
+           </div>
             <a
               href="mailto:info@infomericainc.com"
-              className="text-decoration-none text-white"
+              className="text-decoration-none text-white mt-2"
             >
               <button
-                className="btn fs-5 w-100 text-white"
+                className="btn fs-6 w-100 text-white"
                 style={{ backgroundColor: "rgb(14, 46, 78)" }}
               >
                 Send Message
