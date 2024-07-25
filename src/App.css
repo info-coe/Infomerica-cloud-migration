@@ -21,7 +21,7 @@
 }
 
 .flip-card {
-  min-height: 300px;
+  min-height: 350px;
   height: 100%;
   width: 100%;
   max-width: 300px; 
@@ -58,9 +58,9 @@
 }
 
 .flip-card-front {
-  background-color: rgb(14, 46, 78);
-  /* background-color: white;
-  background-image: url("./Images/capability1.webp"); */
+  /* background-color: rgb(14, 46, 78); */
+  background-color: white;
+  /*background-image: url("./Images/capability1.webp"); */
   background-size: contain;
   background-repeat: no-repeat;
   background-position: center;
@@ -84,7 +84,7 @@ h3 {
   font-family: Verdana, sans-serif;
   font-weight: bold;
   margin:0px 40px;
-  color: rgb(252, 251, 251);
+  /* color: rgb(252, 251, 251); */
 }
 .portfoliohead{
   min-height: 80px;
