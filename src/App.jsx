@@ -6,7 +6,7 @@ import Benefit1 from "./Images/Benefits1.png";
 import Benefit2 from "./Images/Benefits2.png";
 import Benefit3 from "./Images/Benefits3.png";
 import Benefit4 from "./Images/Benefits4.png";
-import contactImage from "./Images/contactus.jpg";
+import contactImage from "./Images/contactus2.jpeg";
 
 function App() {
   return (
