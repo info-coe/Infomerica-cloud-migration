@@ -7,10 +7,13 @@ import Benefit2 from "./Images/Benefits2.png";
 import Benefit3 from "./Images/Benefits3.png";
 import Benefit4 from "./Images/Benefits4.png";
 import contactImage from "./Images/contactus2.jpeg";
+import Navbar from "./Navbar";
+import Footer from "./Footer";
 
 function App() {
   return (
     <>
+    <Navbar/>
       <div className="awsmain">
         <div className="text-end">
           <img
@@ -295,7 +298,7 @@ function App() {
           </div>
         </div>
       </div>
-      <div className="p-3 text-center">
+      {/* <div className="p-3 text-center">
         <p>
           For more details or to discuss your specific needs,{" "}
           <b>
@@ -309,7 +312,8 @@ function App() {
           </b>{" "}
           today!
         </p>
-      </div>
+      </div> */}
+      <Footer/>
     </>
   );
 }
