@@ -271,7 +271,7 @@ function App() {
            </div>
            <div>
            <label>
-              <b>Orgaization</b>
+              <b>Organization</b>
             </label>
             <input type="text" className="form-control" />
            </div>
