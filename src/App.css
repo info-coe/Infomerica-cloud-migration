@@ -2,13 +2,13 @@
   margin: 0;
   padding: 0;
 }
-.awsmain{
+/* .awsmain{
   background-image: url("./Images/AWS-home-banner4.jpg");
   background-size: cover;
   background-repeat: no-repeat;
   background-position: center;
   height: 110vh;
-}
+} */
 
 .customCard .card{
   transition: transform 0.8s;

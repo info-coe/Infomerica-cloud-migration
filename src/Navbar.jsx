@@ -14,7 +14,7 @@ const Navbar = () => {
                             <img src={InfoLogo} alt="Logo" width="120" height="60"/>
                         </div>
                     </div>
-                    <div className="collapse navbar-collapse d-flex justify-content-center d-none d-lg-block" id="navbarNavDropdown">
+                    {/* <div className="collapse navbar-collapse d-flex justify-content-center d-none d-lg-block" id="navbarNavDropdown">
                         <ul className="navbar-nav d-flex gap-3">
                             <li className="nav-item">
                                 HOME
@@ -47,7 +47,7 @@ const Navbar = () => {
                                
                             </li>
                         </ul>
-                    </div>
+                    </div> */}
                 </div>
             </nav>
 

@@ -15,7 +15,8 @@ function App() {
     <>
     <Navbar/>
       <div className="awsmain">
-        <div className="text-end">
+        <img src="https://www.infomericainc.com/Content/images/services-banner.jpg" alt="Aws Services" width="100%"/>
+        {/* <div className="text-end">
           <img
             src={Logo}
             width="17%"
@@ -51,9 +52,12 @@ function App() {
               alt="AWS LOGO"
             ></img>
           </div>
-        </div>
+        </div> */}
       </div>
       <div className="mt-4">
+      <h1 className="m-4 text-center">
+            Streamline Your Operations with Infomerica's AWS Services
+          </h1>
         <h1 className="text-center">Our Approach</h1>
         <div>
           <div className="d-md-flex justify-content-center align-items-center gap-5 m-2 mb-0">
@@ -87,7 +91,7 @@ function App() {
         </div>
       </div>
       <div className="m-5">
-        <h1>Our Service Portfolio</h1>
+        <h1 className="text-center">Our Service Portfolio</h1>
         <p className="fs-5">
           Infomerica, where innovation meets execution. As an AWS Select
           Consulting Partner, we specialize in harnessing the sophisticated
