@@ -417,6 +417,8 @@ function App() {
             name="phone" 
             value={formData.phone} 
             onChange={handleChange} 
+            minLength={10}
+            maxLength={10}
             required 
           />
         </div>
