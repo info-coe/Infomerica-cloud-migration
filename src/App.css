@@ -167,8 +167,15 @@ h3 {
   color: rgb(213, 150, 24);
 }
 
+/* footer end */
 
 /* footer end */
+.no-select {
+  user-select: none; /* For modern browsers */
+  -webkit-user-select: none; /* For Safari */
+  -moz-user-select: none; /* For Firefox */
+  -ms-user-select: none; /* For Internet Explorer/Edge */
+}
 
 
 @media (max-width: 575.98px) {
@@ -195,7 +202,7 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
   }
   .contactdiv{
-    height: 460px;
+    height: 520px;
   }
  
 }
@@ -211,7 +218,7 @@ h3 {
     min-height: 100px;
   }
    .contactdiv{
-    height: 460px;
+    height: 520px;
   }
 }
 
@@ -220,6 +227,6 @@ h3 {
     grid-template-columns: repeat(4, 1fr);
   }
   .contactdiv{
-    height: 470px;
+    height: 520px;
   }
 }

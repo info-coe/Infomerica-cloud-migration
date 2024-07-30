@@ -1,3 +1,4 @@
+import React, { useState, useEffect } from "react";
 import "./App.css";
 import Logo from "./Images/company-logo.png";
 import AWSLogo from "./Images/AWS.png";
@@ -9,8 +10,70 @@ import Benefit4 from "./Images/Benefits4.png";
 import contactImage from "./Images/contactus2.jpeg";
 import Navbar from "./Navbar";
 import Footer from "./Footer";
+import "bootstrap/dist/css/bootstrap.min.css";
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 
 function App() {
+
+  const initialFormData = {
+    name: '',
+    email: '',
+    phone: '',
+    organization: '',
+    message: '',
+    captchaInput: ''
+  };
+
+  const [formData, setFormData] = useState(initialFormData);
+  const [captcha, setCaptcha] = useState('');
+  const [captchaError, setCaptchaError] = useState('');
+  useEffect(() => {
+    if (localStorage.getItem('firstLoadDone') === null) {
+      localStorage.setItem('firstLoadDone', 1);
+      generateCaptcha();
+    } else {
+      generateCaptcha();
+    }
+    // eslint-disable-next-line react-hooks/exhaustive-deps
+  }, []);
+
+  const handleChange = (e) => {
+    const { name, value } = e.target;
+    setFormData({
+      ...formData,
+      [name]: value
+    });
+  };
+ 
+
+  const handleSubmit = (e) => {
+    e.preventDefault();
+    if (formData.captchaInput !== captcha) {
+      setCaptchaError('Invalid captcha');
+    } else {
+      setCaptchaError('');
+      window.location.href = `mailto:info@infomericainc.com?subject=Contact&body=${encodeURIComponent(`
+        Name: ${formData.name}
+        Email: ${formData.email}
+        Phone: ${formData.phone}
+        Organization: ${formData.organization}
+        Message: ${formData.message}
+      `)}`;
+      setFormData(initialFormData); // Clear the form fields
+    }
+  };
+
+  const generateCaptcha = () => {
+    const captchaElement = document.getElementById("image");
+    let uniquechar = "";
+    const randomchar = "ABCDEFGHIJKLMNOPQRSTUVWXYZabcdefghijklmnopqrstuvwxyz0123456789";
+    for (let i = 1; i < 7; i++) {
+      uniquechar += randomchar.charAt(Math.floor(Math.random() * randomchar.length));
+    }
+    captchaElement.innerHTML = uniquechar;
+    setCaptcha(uniquechar);
+  };
+  
   return (
     <>
     <Navbar/>
@@ -257,7 +320,7 @@ function App() {
           <div className="col-lg-6 contactdiv">
             <img src={contactImage} alt="contact" width="100%" height="100%" style={{backgroundSize:"cover", backgroundPosition:"center" }}></img>
           </div>
-          <div className="d-flex flex-column gap-2 col-lg-6 p-2 ps-md-5 pe-md-5 pt-md-4 pb-md-4 bg-light contactdiv">
+          {/* <div className="d-flex flex-column gap-2 col-lg-6 p-2 ps-md-5 pe-md-5 pt-md-4 pb-md-4 bg-light contactdiv">
             <div>
             <label>
               <b>Your Name</b>
@@ -288,9 +351,31 @@ function App() {
             </label>
             <textarea rows="2" cols="50" className="form-control"></textarea>
            </div>
+          
+            <div className="d-flex justify-content-center">
+              <div id="user-input" className="d-flex m-2 gap-2">
+                <input
+                  type="text"
+                  className="mr-2 form-control"
+                  id="submit"
+                  placeholder="Enter Captcha"
+                />
+                <div className="mr-2 mt-1" onClick={generate}>
+                  <i className="fas fa-sync"></i>
+                </div>
+                <div
+                  id="image"
+                  className="bg-secondary text-decoration-line-through fst-italic p-1 rounded fs-5 no-select"
+                  selectable="False"
+                ></div>
+              </div>
+            </div>
+            <p id="key" className="text-danger"></p>
+           
             <a
               href="mailto:info@infomericainc.com"
-              className="text-decoration-none text-white mt-2"
+              className="text-decoration-none text-white "
+              style={{marginTop:"-5px"}}
             >
               <button
                 className="btn fs-6 w-100 text-white"
@@ -299,7 +384,99 @@ function App() {
                 Send Message
               </button>
             </a>
+          </div> */}
+         <div className="d-flex flex-column gap-2 col-lg-6 p-2 ps-md-5 pe-md-5 pt-md-4 pb-md-4 bg-light contactdiv">
+      <form onSubmit={handleSubmit}>
+        <div>
+          <label><b>Your Name</b></label>
+          <input 
+            type="text" 
+            className="form-control" 
+            name="name" 
+            value={formData.name} 
+            onChange={handleChange} 
+            required 
+          />
+        </div>
+        <div>
+          <label><b>Email Address</b></label>
+          <input 
+            type="email" 
+            className="form-control" 
+            name="email" 
+            value={formData.email} 
+            onChange={handleChange} 
+            required 
+          />
+        </div>
+        <div>
+          <label><b>Phone Number</b></label>
+          <input 
+            type="tel" 
+            className="form-control" 
+            name="phone" 
+            value={formData.phone} 
+            onChange={handleChange} 
+            required 
+          />
+        </div>
+        <div>
+          <label><b>Organization</b></label>
+          <input 
+            type="text" 
+            className="form-control" 
+            name="organization" 
+            value={formData.organization} 
+            onChange={handleChange} 
+            required 
+          />
+        </div>
+        <div>
+          <label><b>Message</b></label>
+          <textarea 
+            rows="2" 
+            cols="50" 
+            className="form-control" 
+            name="message" 
+            value={formData.message} 
+            onChange={handleChange} 
+            required 
+          ></textarea>
+        </div>
+        <div className="d-flex justify-content-center mt-2 mb-2">
+          <div id="user-input" className="d-flex m-2 gap-2">
+            <input
+              type="text"
+              className="mr-2 form-control"
+              id="submit"
+              name="captchaInput"
+              placeholder="Enter Captcha"
+              value={formData.captchaInput}
+              onChange={handleChange}
+              required
+            />
+            <div className="mr-2 mt-1" onClick={generateCaptcha}>
+              <i className="fas fa-sync"></i>
+            </div>
+            <div
+              id="image"
+              className="bg-secondary text-decoration-line-through fst-italic p-1 rounded fs-5 no-select"
+              selectable="False"
+            ></div>
           </div>
+          
+        </div>
+        {captchaError && <p className="text-danger text-center">{captchaError}</p>}
+        <button
+          type="submit"
+          className="btn fs-6 w-100 text-white"
+          style={{ backgroundColor: "rgb(14, 46, 78)" }}
+        >
+          Send Message
+        </button>
+      </form>
+         </div>
+
         </div>
       </div>
       {/* <div className="p-3 text-center">
