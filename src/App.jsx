@@ -387,7 +387,7 @@ function App() {
           </div> */}
          <div className="d-flex flex-column gap-2 col-lg-6 p-2 ps-md-5 pe-md-5 pt-md-4 pb-md-4 bg-light contactdiv">
       <form onSubmit={handleSubmit}>
-        <div>
+        <div className="m-1">
           <label><b>Your Name</b></label>
           <input 
             type="text" 
@@ -398,7 +398,7 @@ function App() {
             required 
           />
         </div>
-        <div>
+        <div className="m-1">
           <label><b>Email Address</b></label>
           <input 
             type="email" 
@@ -409,7 +409,7 @@ function App() {
             required 
           />
         </div>
-        <div>
+        <div className="m-1">
           <label><b>Phone Number</b></label>
           <input 
             type="tel" 
@@ -420,7 +420,7 @@ function App() {
             required 
           />
         </div>
-        <div>
+        <div className="m-1">
           <label><b>Organization</b></label>
           <input 
             type="text" 
@@ -431,7 +431,7 @@ function App() {
             required 
           />
         </div>
-        <div>
+        <div className="m-1">
           <label><b>Message</b></label>
           <textarea 
             rows="2" 

@@ -202,7 +202,7 @@ h3 {
     grid-template-columns: repeat(2, 1fr);
   }
   .contactdiv{
-    height: 520px;
+    height: 530px;
   }
  
 }
@@ -218,7 +218,7 @@ h3 {
     min-height: 100px;
   }
    .contactdiv{
-    height: 520px;
+    height: 530px;
   }
 }
 
@@ -227,6 +227,6 @@ h3 {
     grid-template-columns: repeat(4, 1fr);
   }
   .contactdiv{
-    height: 520px;
+    height: 530px;
   }
 }
