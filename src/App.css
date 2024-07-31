@@ -177,6 +177,52 @@ h3 {
   -ms-user-select: none; /* For Internet Explorer/Edge */
 }
 
+/* Side navbar */
+.sidenavbardiv{
+  line-height: 10px;
+}
+.sidenavbardiv a{
+  color: white;
+  transition: 0.4s;
+}
+.sidenavbardiv a:hover
+{
+  color: red;
+  transition: 0.4s;
+}
+
+.rotate-down {
+  transform: rotate(90deg);
+  transition: transform 0.4s ease-in-out;
+}
+
+.rotate-down:not(.rotate) {
+  transform: rotate(0);
+}
+
+.aboutchilds {
+  max-height: 0;
+  overflow: hidden;
+  transition: max-height 0.3s ease-out;
+}
+
+.aboutchilds.show {
+  max-height: 1000px; 
+  transition: max-height 0.9s ease-in-out;
+}
+.aboutchilds a{
+  line-height: 15px;
+} 
+
+
+.rotate-down {
+  transform: rotate(90deg);
+  transition: transform 0.4s ease-in-out;
+}
+
+.rotate-down:not(.rotate) {
+  transform: rotate(0);
+}
 
 @media (max-width: 575.98px) {
   .ourcapabilities-grid , .ourserviceportfolio-grid{

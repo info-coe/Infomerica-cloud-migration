@@ -12,6 +12,7 @@ import Navbar from "./Navbar";
 import Footer from "./Footer";
 import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import "bootstrap-icons/font/bootstrap-icons.css";
 
 function App() {
 
@@ -121,7 +122,7 @@ function App() {
       <h1 className="m-4 text-center">
             Streamline Your Operations with Infomerica's AWS Services
           </h1>
-        <h1 className="text-center">Our Approach</h1>
+        {/* <h1 className="text-center">Our Approach</h1> */}
         <div>
           <div className="d-md-flex justify-content-center align-items-center gap-5 m-2 mb-0">
             <img
