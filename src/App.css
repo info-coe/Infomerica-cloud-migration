@@ -114,6 +114,156 @@ h3 {
   border-bottom: 2px solid #ddd;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
 }
+#homelink , #aboutusDropdown, #industriesDropdown, #servicesDropdown, #solutionsDropdown, #contactlink, #csrlink, #careersDropdown{
+  color: black;
+}
+#navbarNavDropdown #aboutusDropdown:hover, 
+#industriesDropdown:hover, 
+#solutionsDropdown:hover, 
+#careersDropdown:hover , 
+#servicesDropdown:hover,
+#csrlink:hover,
+#contactlink:hover,
+#homelink:hover{
+  color:red;
+  transition: 0.4s;
+}
+
+
+.text-red {
+  color: red !important;
+}
+
+/* scroll bar css start*/
+::-webkit-scrollbar {
+  width: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: blue;
+  border-radius: 6px; 
+}
+::-webkit-scrollbar-track {
+  background: #dad7d7;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: red;
+}
+/* scroll bar css end*/
+
+/* Dropdown hover line animation */
+.dropdown-menu li {
+  margin-bottom: 2px;
+}
+.lineAnimation {
+  display: inline-block;
+  color:blue;
+  text-decoration: none;
+}
+.lineAnimation::after {
+  content: '';
+  display: block;
+  width: 0;
+  height: 3px;
+  background: blue;
+  transition: width .9s;
+}
+.lineAnimation:hover::after {
+  width: 100%;
+  transition: width .9s;
+}
+
+/* .btn-with-hover {
+position: relative;
+display: inline-flex;
+align-items: center;
+gap: 10px; 
+padding: 8px;
+color: #fff;
+border: 2px solid #fff;
+background-color: blue; 
+overflow: hidden; 
+transition: color 0.3s ease; 
+z-index: 1;
+border-radius: 8px;
+}
+
+.btn-with-hover::before {
+content: '';
+position: absolute;
+top: 0;
+left: -100%; 
+width: 100%;
+height: 100%;
+background-color: red; 
+transition: left 0.4s ease; 
+z-index: -1; 
+}
+
+.btn-with-hover:hover::before {
+left: 0; 
+} */
+
+@keyframes ripple {
+0% {
+  transform: scale(1);
+}
+50% {
+  transform: scale(1.4);
+}
+100% {
+  transform: scale(1);
+}
+}
+/* Animation to the dropdown menus */
+@keyframes scaleDown {
+  0% {
+    transform: scaleY(0);
+  }
+  50% {
+    transform: scaleY(1);
+  }
+  100% {
+    transform: scaleY(1);
+  }
+}
+
+.dropdown-menu {
+  display: none; 
+  animation: scaleDown 400ms ease-out;
+  transform-origin: top center;
+  background-color: #f8f9fa; 
+  border-radius: 0 !important; 
+  border-top: 3px solid blue !important;
+  outline: none !important;
+  position: absolute;
+  min-width: 160px;
+  box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+  z-index: 1;
+}
+
+.dropdown-menu.show {
+  display: block; 
+}
+
+.dropdown-item {
+  background-color: #f8f9fa;
+}
+
+.dropdown-item:hover {
+  background-color: #e9ecef;
+}
+
+.dropdown-menu .dropdown-item {
+  margin-top: 4px;
+  margin-bottom: 4px;
+}
+
+.dropdown-menu .dropdown-menu {
+  position: absolute;
+  top: 0;
+  left: -61%;
+  margin-top: 0;
+}
 
 /* footer start */
 .flex-container {

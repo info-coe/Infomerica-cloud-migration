@@ -13,22 +13,22 @@ const Footer = () => {
                 <h5>Key Links</h5>
                 <ul className='list-unstyled d-md-flex gap-5' style={{lineHeight:"30px"}}>
                    <div>
-                   <li><i className="bi bi-chevron-double-right"></i>&nbsp;About Us</li>
+                   <li><a href="https://infomericainc.com/About-Infomerica" className='text-decoration-none'><i className="bi bi-chevron-double-right"></i>&nbsp;About Us</a></li>
                   
-                   <li><i className="bi bi-chevron-double-right"></i>&nbsp;Services</li>
+                   <li><a href="https://infomericainc.com/Services" className='text-decoration-none'><i className="bi bi-chevron-double-right"></i>&nbsp;Services</a></li>
                   
-                   <li><i className="bi bi-chevron-double-right"></i>&nbsp;Solutions</li>
+                   <li><a href="https://infomericainc.com/Solutions" className='text-decoration-none'><i className="bi bi-chevron-double-right"></i>&nbsp;Solutions</a></li>
                    
-                   <li><i className="bi bi-chevron-double-right"></i>&nbsp;Industries</li>
+                 
                   
                    </div>
                    <div>
                  
-                   <li><i className="bi bi-chevron-double-right"></i>&nbsp;CSR</li>
+                   <li><a href="https://infomericainc.com/CSR" className='text-decoration-none'><i className="bi bi-chevron-double-right"></i>&nbsp;CSR</a></li>
                   
-                   <li><i className="bi bi-chevron-double-right"></i>&nbsp;Careers</li>
+                   <li><a href="https://infomericainc.com/Careers" className='text-decoration-none'><i className="bi bi-chevron-double-right"></i>&nbsp;Careers</a></li>
                    
-                   <li><i className="bi bi-chevron-double-right"></i>&nbsp;Contact Us</li>
+                   <li><a href="https://infomericainc.com/Contact" className='text-decoration-none'><i className="bi bi-chevron-double-right"></i>&nbsp;Contact Us</a></li>
                   
                    </div>
                 </ul>
@@ -37,14 +37,14 @@ const Footer = () => {
             <div className='getintouch flexgrowdiv'>
                 <h5 className='mb-3'>Get in touch</h5>
                 <p><i className="bi bi-geo-alt-fill"></i> : Infomerica - USA, UK, India</p>
-                <p><i className="bi bi-envelope"></i> :  info@infomericainc.com</p>
+                <p><i className="bi bi-envelope"></i> :  <a className='text-decoration-none text-dark'  href="mailto:info@infomericainc.com">info@infomericainc.com</a></p>
             </div>
             <div className='followus flexgrowdiv '>
                 <h5 className='mb-3'>Follow Us</h5>
            <div className='d-flex gap-3'>
-            <img src="https://infomericainc.com/Content/images/facebook.jpg" alt="facebookImg" width="40" height="40"/>
-            <img src="https://infomericainc.com/Content/images/youtube.png" alt="YoutubeImg" width="40" height="40"/>
-            <img src="https://infomericainc.com/Content/images/linkedin.png" alt="LinkedInImg" width="40" height="40"/>
+            <a href="https://www.facebook.com/Infomerica1998/"><img src="https://infomericainc.com/Content/images/facebook.jpg" alt="facebookImg" width="40" height="40"/></a>
+            <a href="https://www.youtube.com/results?search_query=infomerica"><img src="https://infomericainc.com/Content/images/youtube.png" alt="YoutubeImg" width="40" height="40"/></a>
+            <a href="https://www.linkedin.com/company/infomerica"><img src="https://infomericainc.com/Content/images/linkedin.png" alt="LinkedInImg" width="40" height="40"/></a>
            </div>
             </div>
 

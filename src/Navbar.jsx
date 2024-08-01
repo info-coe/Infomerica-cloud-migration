@@ -1,5 +1,5 @@
 import React, { useState } from "react";
-import InfoLogo from "./Images/logo.png";
+import InfoLogo from "./Images/company-logo.png";
 import SideNavbar from "./SideNavbar";
 
 const Navbar = () => {
@@ -37,24 +37,6 @@ const Navbar = () => {
   };
 
   return (
-    //    {/* Offcanvas start */}
-    //    <div className="offcanvas slide offcanvas-end" data-bs-scroll="true" data-bs-backdrop="false" tabIndex="-1" id="offcanvasScrolling" aria-labelledby="offcanvasScrollingLabel">
-    //                 <div className="offcanvas-header d-flex justify-content-between">
-    //                 <img src={InfoLogo} alt="Logo" width="120" height="60" className='bg-white'/>
-    //                     <i
-    //                         className={`bi bi-x-circle-fill fs-3 btnClose`}
-    //                         data-bs-dismiss="offcanvas"
-    //                         aria-label="Close"
-    //                         style={{ cursor: "pointer" }}
-    //                     ></i>
-    //                 </div>
-    //                 <div className="offcanvas-body">
-    //                    <SideNavbar/>
-    //                 </div>
-    //             </div>
-    //             {/* Offcanvas end */}
-
-    //         </>
     <>
       <nav className="navbar navbar-expand-lg bg-light sticky-top scrolled">
         <div className="container-fluid">
@@ -74,7 +56,7 @@ const Navbar = () => {
                 src={InfoLogo}
                 alt="Logo"
                 width="120"
-                height="60"
+                height="55"
                 className="bg-white"
               />
             </div>
@@ -86,7 +68,7 @@ const Navbar = () => {
             <ul className="navbar-nav d-flex gap-2">
               <li className="nav-item">
                 <span>
-                <a className="nav-a" href="https://infomericainc.com/" id="homea">
+                <a className="nav-link " href="https://infomericainc.com/" id="homelink">
                   HOME
                 </a>
                 </span>
@@ -98,7 +80,8 @@ const Navbar = () => {
               >
                 <span>
                 <a
-                  className="nav-a"
+                //   className="nav-link"
+                 className={`nav-link  ${dropdownState.aboutus ? "text-red" : ""}`}
                   href="https://infomericainc.com/About-Infomerica"
                   id="aboutusDropdown"
                   role="button"
@@ -109,9 +92,7 @@ const Navbar = () => {
                 </a>
                 </span>
                 <ul
-                  className={`dropdown-menu ${
-                    dropdownState.aboutus ? "show" : ""
-                  }`}
+                  className={`dropdown-menu ${dropdownState.aboutus ? "show" : ""}`}
                   aria-labelledby="aboutusDropdown"
                 >
                   <li>
@@ -135,13 +116,13 @@ const Navbar = () => {
                 </ul>
               </li>
               <li
-                className="nav-item dropdown mt-2"
+                className="nav-item dropdown"
                 onMouseEnter={() => handleDropdownMouseEnter("industries")}
                 onMouseLeave={() => handleDropdownMouseLeave("industries")}
               >
-                <span id="industriesDropdown">INDUSTRIES</span>
+                <span id="industriesDropdown" className={`nav-link  ${dropdownState.industries ? "text-red" : ""}`}>INDUSTRIES</span>
                 <ul
-                  className={`dropdown-menu mt-2 ${
+                  className={`dropdown-menu  ${
                     dropdownState.industries ? "show" : ""
                   }`}
                   aria-labelledby="industriesDropdown"
@@ -217,7 +198,7 @@ const Navbar = () => {
                 onMouseLeave={() => handleDropdownMouseLeave("services")}
               >
                 <a
-                  className="nav-a"
+                   className={`nav-link  ${dropdownState.services ? "text-red" : ""}`}
                   href="https://infomericainc.com/Services"
                   id="servicesDropdown"
                   role="button"
@@ -394,13 +375,13 @@ const Navbar = () => {
                 </ul>
               </li>
               <li
-                className="nav-item dropdown mt-2"
+                className="nav-item dropdown"
                 onMouseEnter={() => handleDropdownMouseEnter("solutions")}
                 onMouseLeave={() => handleDropdownMouseLeave("solutions")}
               >
-                <span id="solutionsDropdown">SOLUTIONS</span>
+                <span id="solutionsDropdown"   className={`nav-link  ${dropdownState.solutions ? "text-red" : ""}`}>SOLUTIONS</span>
                 <ul
-                  className={`dropdown-menu mt-2 ${
+                  className={`dropdown-menu ${
                     dropdownState.solutions ? "show" : ""
                   }`}
                   aria-labelledby="solutionsDropdown"
@@ -481,9 +462,9 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <a
-                  className="nav-a"
+                  className="nav-link"
                   href="https://infomericainc.com/Contact"
-                  id="contact"
+                  id="contactlink"
                   onClick={handleaClick}
                 >
                   CONTACT US
@@ -491,9 +472,9 @@ const Navbar = () => {
               </li>
               <li className="nav-item">
                 <a
-                  className="nav-a"
+                  className="nav-link"
                   href="https://infomericainc.com/CSR"
-                  id="csra"
+                  id="csrlink"
                   onClick={handleaClick}
                 >
                   CSR
@@ -505,7 +486,7 @@ const Navbar = () => {
                 onMouseLeave={() => handleDropdownMouseLeave("careers")}
               >
                 <a
-                  className="nav-a"
+                  className={`nav-link  ${dropdownState.careers ? "text-red" : ""}`}
                   href="https://infomericainc.com/Careers"
                   id="careersDropdown"
                   role="button"
