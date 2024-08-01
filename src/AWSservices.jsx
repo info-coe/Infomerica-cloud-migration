@@ -1,4 +1,4 @@
-import React, { useState, useEffect } from "react";
+import React, { useState, useEffect, useRef } from "react";
 import Logo from "./Images/company-logo.png";
 import AWSLogo from "./Images/AWS.png";
 import AWSCompetency from "./Images/AWS-competency.png";
@@ -19,6 +19,14 @@ export default function AWSservices() {
     organization: "",
     message: "",
     captchaInput: "",
+  };
+
+  const contactRef = useRef(null);
+
+  const scrollToContact = () => {
+    if (contactRef.current) {
+      contactRef.current.scrollIntoView({ behavior: "smooth" });
+    }
   };
 
   const [formData, setFormData] = useState(initialFormData);
@@ -103,15 +111,9 @@ export default function AWSservices() {
               optimization.
               <br />
               <span className="d-flex justify-content-start me-4 fs-6 mt-3">
-                <a
-                  className="bg-dark rounded p-2 text-decoration-none text-white"
-                  href="https://infomericainc.com/AWS-Services"
-                  target="blank"
-                >
-                  <b>
-                    Get More <i className="bi bi-arrow-right"></i>
-                  </b>
-                </a>
+                <button className="btn btn-dark" onClick={scrollToContact}>
+                  CONTACT US <i className="bi bi-arrow-right"></i>
+                </button>
               </span>
             </p>
           </div>
@@ -291,7 +293,7 @@ export default function AWSservices() {
           </div>
         </div>
       </div>
-      <div className="contactusdiv mt-3 mb-3">
+      <div className="contactusdiv mt-3 mb-3" ref={contactRef}>
         <h1 className="text-center">Contact Us</h1>
         <p className="text-center mt-3">
           Please take a moment to get in touch, we will get back to you shortly.
