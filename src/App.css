@@ -2,13 +2,6 @@
   margin: 0;
   padding: 0;
 }
-/* .awsmain{
-  background-image: url("./Images/AWS-home-banner4.jpg");
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: center;
-  height: 110vh;
-} */
 
 .customCard .card{
   transition: transform 0.8s;
@@ -108,7 +101,7 @@ h3 {
   text-align: center;
   
 }
-#offcanvasScrolling{
+#offcanvasRight{
   width: 290px;
   background: #75ACD5;
   color: white;
@@ -116,6 +109,7 @@ h3 {
 .offcanvas.slide {
   transition-duration: 0.4s; 
 }
+
 .navbar.scrolled {
   border-bottom: 2px solid #ddd;
   box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
@@ -177,6 +171,11 @@ h3 {
   -ms-user-select: none; /* For Internet Explorer/Edge */
 }
 
+.nav-a{
+  text-decoration: none;
+  color: black;
+}
+
 /* Side navbar */
 .sidenavbardiv{
   line-height: 10px;
@@ -214,6 +213,9 @@ h3 {
   line-height: 15px;
 } 
 
+#navbarNavDropdown .dropdown a:active{
+  background-color: white;
+}
 
 .rotate-down {
   transform: rotate(90deg);
