@@ -81,49 +81,11 @@ export default function AWSservices() {
           alt="Aws Services"
           width="100%"
         />
-        {/* <div className="text-end">
-          <img
-            src={Logo}
-            width="17%"
-            className="bg-white m-3 p-2"
-            alt="LOGO"
-          ></img>
-        </div>
-        <div
-          className="w-50 p-4"
-          style={{
-            backgroundColor: "rgba(14, 46, 78,0.7)",
-            marginLeft: "60px",
-          }}
-        >
-          <h1 className="text-white text-center">
-            Streamline Your Operations with Infomerica's AWS Services
-          </h1>
-        </div>
-        <div className="d-md-flex" style={{ marginTop: "140px" }}>
-          <div className="mt-5">
-            <div className="">
-              <h4 className="text-white" style={{ marginLeft: "60px" }}>
-                Achieve Greater Efficiency and Security with Our Customized
-                Solutions
-              </h4>
-            </div>
-          </div>
-          <div className="text-end">
-            <img
-              src={AWSLogo}
-              width="30%"
-              className="bg-light p-4 me-3"
-              alt="AWS LOGO"
-            ></img>
-          </div>
-        </div> */}
       </div>
       <div className="mt-4">
         <h1 className="m-4 text-center">
           Streamline Your Operations with Infomerica's AWS Services
         </h1>
-        {/* <h1 className="text-center">Our Approach</h1> */}
         <div>
           <div className="d-md-flex justify-content-center align-items-center gap-5 m-2 mb-0">
             <img
@@ -344,71 +306,6 @@ export default function AWSservices() {
               style={{ backgroundSize: "cover", backgroundPosition: "center" }}
             ></img>
           </div>
-          {/* <div className="d-flex flex-column gap-2 col-lg-6 p-2 ps-md-5 pe-md-5 pt-md-4 pb-md-4 bg-light contactdiv">
-            <div>
-            <label>
-              <b>Your Name</b>
-            </label>
-            <input type="text" className="form-control" />
-            </div>
-           <div>
-           <label>
-              <b>Email Address</b>
-            </label>
-            <input type="email" className="form-control" />
-           </div>
-           <div>
-           <label>
-              <b>Phone Number</b>
-            </label>
-            <input type="tel" className="form-control" />
-           </div>
-           <div>
-           <label>
-              <b>Organization</b>
-            </label>
-            <input type="text" className="form-control" />
-           </div>
-           <div>
-           <label>
-              <b>Message</b>
-            </label>
-            <textarea rows="2" cols="50" className="form-control"></textarea>
-           </div>
-          
-            <div className="d-flex justify-content-center">
-              <div id="user-input" className="d-flex m-2 gap-2">
-                <input
-                  type="text"
-                  className="mr-2 form-control"
-                  id="submit"
-                  placeholder="Enter Captcha"
-                />
-                <div className="mr-2 mt-1" onClick={generate}>
-                  <i className="fas fa-sync"></i>
-                </div>
-                <div
-                  id="image"
-                  className="bg-secondary text-decoration-line-through fst-italic p-1 rounded fs-5 no-select"
-                  selectable="False"
-                ></div>
-              </div>
-            </div>
-            <p id="key" className="text-danger"></p>
-           
-            <a
-              href="mailto:info@infomericainc.com"
-              className="text-decoration-none text-white "
-              style={{marginTop:"-5px"}}
-            >
-              <button
-                className="btn fs-6 w-100 text-white"
-                style={{ backgroundColor: "rgb(14, 46, 78)" }}
-              >
-                Send Message
-              </button>
-            </a>
-          </div> */}
           <div className="d-flex flex-column gap-2 col-lg-6 p-2 ps-md-5 pe-md-5 pt-md-4 pb-md-4 bg-light contactdiv">
             <form onSubmit={handleSubmit}>
               <div className="m-1">
