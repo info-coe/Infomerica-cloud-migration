@@ -7,6 +7,6 @@ export default defineConfig({
     host: '0.0.0.0',
     port: 5173 // Or any other port you want to use
   },
-  // base: "/Infomerica-cloud-migration",
+  base: "/Infomerica-cloud-migration",
   plugins: [react()],
 })
